@@ -1,0 +1,20 @@
+<%- include("partials/header"); %>
+<div class="container" >
+<h2>Search</h2>
+
+    <div class="row airfryer" >
+        <%  if(recipe!=""){%>
+            <% recipe.forEach(function(recipe) { %>
+                <div class="col-lg-4 "> 
+                <p><%=recipe.name%></p>
+                <a href="/recipes/<%= recipe._id %>"> <img class="square" src="/css/<%= recipe.image %>"/></a>
+            </div>
+            <%  }) %>
+            <%  } else{ %> 
+            <h2><%= message %></h2> 
+            <% } %>    
+    </div>
+    </div>
+    
+
+<%- include("partials/footer"); %>

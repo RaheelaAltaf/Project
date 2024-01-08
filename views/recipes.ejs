@@ -1,0 +1,37 @@
+<%- include("partials/header"); %>
+<div class="container" >
+<div class="row" >
+    <%  if(traditional!=""){%>
+        <% traditional.forEach(function(recipe) { %>
+            <div class="col-sm-2 col-lg-4"> 
+                <p><%=recipe.name%></p>
+        <a href="/recipes/<%= recipe._id %>"> <img class="square" src="/css/<%= recipe.image %>"/></a>
+            </div>
+            <%  }) %>
+           <%  }  %>  
+</div>
+
+
+<div class="row">
+    <h2 class="Famous">You May Also Like</h2>
+    <%  if(recipes!=""){%>
+    <% recipes.forEach(function(recipe) { %>
+   
+    <div class="col-lg-4">
+        <a href="/recipes/<%= recipe._id %>"><img class="square" src="/css/<%= recipe.image %>"/></a>
+      <h2 class="fw-normal"><%= recipe.name %></h2>
+      
+    </div><!-- /.col-lg-4 -->
+
+    <%  }) %>
+    <%  }  %>  
+    
+</div>
+</div>    
+
+
+
+
+
+<%- include("partials/footer"); %>
+

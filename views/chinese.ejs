@@ -1,0 +1,18 @@
+<%- include("partials/header"); %>
+
+
+<div class="container" >
+    <div class="row chinese" >
+    <%  if(chineseRecipes!=""){%>
+        <% chineseRecipes.forEach(function(recipe) { %>
+            <div class="col-lg-12"> 
+            <p><%=recipe.name%></p>
+            <a href="/recipes/<%= recipe._id %>"> <img class="rectangle"  src="/css/<%= recipe.image %>"/></a>
+            
+        </div>
+        <%  }) %>
+        <%  }  %>
+    </div>
+
+</div>
+<%- include("partials/footer"); %>

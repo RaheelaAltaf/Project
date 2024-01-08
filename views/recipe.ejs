@@ -1,0 +1,30 @@
+<%- include("partials/header"); %>
+<div class="container" >
+<% if(recipe!=null) {%>
+    
+    <div class="row" id="recipe">
+    <div class="col-12">
+    <h1><%= recipe.name %></h1></div>
+    <div class="video-container">
+    <iframe  class="video"  src= <%= recipe.url %> allowfullscreen="true" ></iframe></div>
+    <div class="col-12">
+        <h4>Ingredients</h4>
+        <ul>
+            <% recipe.ingredients.forEach(function(ingredient){%>
+            <li><%= ingredient %></li>
+      <%   })%> 
+        </ul>
+    </div>
+    <div class="col-12">
+        <h4>Cooking Instructions</h4>
+        <ul>
+            <% recipe.descriptions.forEach(function(description){%>
+                <li><%= description %> </li>
+            <%   })%> 
+        </ul>
+    </div>
+
+</div>
+<% } %>
+</div>
+<%- include("partials/footer"); %>
