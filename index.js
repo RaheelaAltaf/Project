@@ -41,7 +41,7 @@ async function insertData(){
    ]
         },
         {
-           name:"Fried rice with chicken manchurian",
+           name:"Fried Rice with Chicken Manchurian",
            image:"rice.JPG",
            category:"Chinese",
            url:"https://www.youtube.com/embed/bFlrMjiSOGc?si=nlizokvM2MVHydCY" ,
@@ -73,7 +73,7 @@ async function insertData(){
           },
           
           {
-           name:"Air Fry Fish",
+           name:"Air Fried Fish",
            image:"airfry fish.jpg",
            category:"Air Fryer",
            url:"https://www.youtube.com/embed/35OIbG3xv8w?si=ING-nwnmIGTQGJfp" ,
@@ -205,7 +205,7 @@ async function insertData(){
    ]
           },
           {
-            name:"Air Fry Chicken",
+            name:"Air Fried Chicken",
             image:"airfry chicken.jpg",
             category:"Air Fryer",
             url:"https://www.youtube.com/embed/Z0dcDn7RsQ8?si=J-Hmdyl_zAXQ-prv" ,
