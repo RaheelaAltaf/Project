@@ -262,7 +262,7 @@ async function insertData(){
       console.log('err'+ error);
    }
 }
-insertData();
+//insertData();
 
 
 app.listen(PORT,()=>{
